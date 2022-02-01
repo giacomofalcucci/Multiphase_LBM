@@ -1,0 +1,14 @@
+
+
+* Modified version (STEP_2). Code improvement.
+        * move to fortran 90                                 
+        * removed common  --> using module                   
+        * removed fourier subroutine                         
+        * allocatable vector                                 
+        * modified input: size from input file, no need to recompile           
+
+Suggested exercises: 
+
+Exercise 1: 
+
+Check performance using different size. 
