@@ -1,0 +1,18 @@
+
+
+* Modified version (STEP_1). Some performance improve done: all at single subroutine level, in details 
+        * merging loop                 
+        * removing unecessary operations
+        * unrolling loop                 
+        * modified subroutines:           
+             * force      
+             * move        
+             * collis       
+             * hydrovar1    
+             * hydrovar2     
+
+Suggested exercises: 
+
+Exercise 1: 
+
+Check performance using different compilers. How change performance whit respect to STEP_0? 
