@@ -1,0 +1,21 @@
+
+
+* Modified version (STEP_5). Fine tuning
+  Merging loops, constant folding
+
+Suggested exercises: 
+
+Exercise 1:
+
+Profile the code with gprof: where are you spending more time?
+...
+make FIX=-pg
+./muphase.x
+gprof muphase.x
+
+
+Exercise 2: 
+
+There's an improvement using different compiler? It is the same? Which is the most performing one? 
+
+
