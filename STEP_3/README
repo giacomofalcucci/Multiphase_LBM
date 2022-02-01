@@ -1,0 +1,28 @@
+
+
+* Modified version (STEP_3). performance improvement. Modification between 
+different subroutines
+        Merging subroutine                                   
+        * equili + collis --> collis                         
+        * hydrovar1 + hydrovar2 --> hydrovarPRE              
+        * hydrovar1 + media     --> hydrovarPOST             
+        * splitted force between hydrovarPRE and collis   
+
+* muphase.imp is modified. Only 1D and 2D diagnostics are performed at time 10'000. 
+
+Suggested exercises: 
+
+Exercise 1:
+
+Profile the code with gprof: where are you spending more time?
+...
+make FIX=-pg
+./muphase.x
+gprof muphase.x
+
+
+Exercise 2: 
+
+Check performance using different size. Are performance decreasing increasing size? 
+
+
