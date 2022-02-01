@@ -1,0 +1,51 @@
+
+
+* Modified version (STEP_0). No performance improveend done. Only "cleaning" the original code
+   	* cleaning code                           
+   	* different files for different subroutines
+        * removing unused arrays                 
+        * instrumenting for timing and Mlups    
+        * created simple makefile         
+	* removed "debug" stabdard output
+
+To compile
+
+* deafult compiling
+make 
+
+* forcing a different compiler  (e.g. ifort)
+make FC=ifort
+
+* forcing a different flag  (e.g. -Ofast)
+make FOPT=-Ofast
+
+* adding a different flag  (e.g. -pg)
+make FIX=-pg
+
+To visualize
+
+use gnuplot and load movie_2d.bgk
+...
+gnuplot> i=0
+gnuplot> l 'movie_2D.bgk'
+
+
+Suggested exercises: 
+
+Exercise 1: 
+
+Profile the code with gprof: where are you spending more time? 
+...
+make FIX=-pg 
+./muphase.x
+gprof muphase.x
+
+
+Exercise 2: 
+
+How change performance (i.e. total time) with different compiler flags? 
+(try -O0, -O1, -O2, -Ofast, for gfortran)
+
+Exercise 3:
+How increase total time with different sizes? 
+(try  96^2, 128^2, 192^2, 512^2,.... You have to modifiy in muphase.par and re-compile the code)
