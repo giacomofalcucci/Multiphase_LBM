@@ -1,0 +1,22 @@
+
+
+* Modified version (STEP_4). performance improvement. 
+  Modified data allocation. From SOA to npop indipendent arrays, one for 
+  directory of propagation.
+
+Suggested exercises: 
+
+Exercise 1:
+
+Profile the code with gprof: where are you spending more time?
+...
+make FIX=-pg
+./muphase.x
+gprof muphase.x
+
+
+Exercise 2: 
+
+Check performance using different size. Are performance decreasing increasing size? 
+
+
