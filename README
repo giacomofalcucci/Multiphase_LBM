@@ -1,0 +1,24 @@
+
+A 2D LBM-tho phase fortran-base code is presented here
+
+This is the directory structure
+
+
+DOC: this directory contains the documentation
+ORIG: this directory contains the original code as it was. It must be used only as a reference
+STEP_0: Code cleaned. No optimization performed
+STEP_1: Single subroutine level optimization
+STEP_2: Code improvement (F90,allocatable vectors). No optimization performed
+STEP_3: Multi subroutine level optimization
+STEP_4: Changed data allocation 
+STEP_5: Fine tuning, merging (big) loops, fusing further subroutine
+STEP_6: OpenMP version
+STEP_7: OpenACC version
+
+
+
+All the time reported here refers to a Intel(R) Xeon(R) Platinum 8260 CPU @ 2.40GHz with the followinf compilers
+
+* gfortran: gcc version 8.4.1 20200928 (Red Hat 8.4.1-1) (GCC) 
+* ifort: fort version 2021.5.0
+* nvfortran: nvfortran 21.9-0 64-bit target on x86-64 Linux -tp skylake

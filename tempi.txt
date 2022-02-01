@@ -1,0 +1,47 @@
+
+Orig: (via unix command time)
+256^2
+gfortran -O2	--> 74''
+gfortran -fast	--> 63''
+
+STEP_0: 
+256^2
+gfortran -O2	--> 72''	 9 Mlups
+gfortran -fast	--> 61''	11 Mlups
+
+512^2
+gfortran -O3    --> 353''	7.4 Mlups
+
+
+STEP_1: 
+512^2
+gfortran -O3    --> 223''	11.7 Mlups
+
+STEP_3: 
+512^2
+gfortran -O3    --> 146''	18.0 Mlups
+
+STEP_4: 
+512^2
+gfortran -O3    --> 159''	16.4 Mlups
+
+STEP_5: 
+512^2
+gfortran   -O3    --> 159''	17.5 Mlups
+intel      -O3    --> 123''	21.3 Mlups
+nvfortran  -03    -->  61''	43.2 Mlups
+gfortran   -0fast --> 147''	17.8 Mlups
+intel      -fast  -->  81''	32.3 Mlups
+nvfortran  -fast  -->  67''	38.9 Mlups
+
+STEP_6: 
+nvfortran  -O3 -mp, 2 threads  -->  32''	81.5 Mlups
+nvfortran  -O3 -mp, 4 threads  -->  18''       142.5 Mlups
+nvfortran  -O3 -mp, 8 threads  -->  12''       227.9 Mlups
+nvfortran  -O3 -mp, 16 threads --> 9.7''       269.2 Mlups
+
+STEP_7: 
+512^2
+nvfortran  -fast -acc, --> 12.7''       191 Mlups
+1024^2
+nvfortran  -fast -acc, --> 18.3''       572 Mlups
