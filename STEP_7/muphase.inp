@@ -1,0 +1,19 @@
+1024	                 nx
+1024                      ny 
+10000                     nsteps
+10000                      nsteps for output
+10000                     nsteps for diagnostics
+1.00d0                   dt (=dx)    
+0.16666667d0             visc
+-5.00d0                  G
+1.00d0                   rhopsi          
+T                        Boolean for force
+0.6931472d0  		 rhoin
+0.0d0       		 u0
+0.0d0			 v0
+0.0d0                    u final 
+F                        boolean
+2                        initial condition (1/2)
+BGK_2                    name of ouput file
+0                        0 does NOT read the dump
+
