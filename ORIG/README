@@ -19,4 +19,4 @@ gnuplot> l 'movie_2D.bgk'
 
 The size of the problem is defined in muphase.par. The default value is 256^2
 The duration of the run is defined in muphase.par. The default value is 10000
-The diagnostic of the run is defined in muphase.par. The default value is 100 (2D) and 500 (1D).
+The diagnostic of the run is defined in muphase.par. The default value is 100 (1D) and 500 (2D).
