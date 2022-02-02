@@ -1,0 +1,6 @@
+*.o
+*.mod
+dump_*
+BGK_2*
+fort.*
+
