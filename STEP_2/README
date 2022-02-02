@@ -1,6 +1,7 @@
 
 
-* Modified version (STEP_2). Code improvement.
+* Modified version (STEP_2). 
+  Coding improvement.
         * move to fortran 90                                 
         * removed common  --> using module                   
         * removed fourier subroutine                         
@@ -9,6 +10,15 @@
 
 Suggested exercises: 
 
-Exercise 1: 
+Exercise 1:
+
+Profile the code with gprof: where are you spending more time?
+...
+make FIX=-pg
+./muphase.x
+gprof muphase.x
+
+
+Exercise 2: 
 
 Check performance using different size. 
