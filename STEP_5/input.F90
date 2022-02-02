@@ -84,6 +84,7 @@
         print*,'  developed and released by Prof. GIACOMO FALCUCCI, PhD'
         print*,'  Lesson ? (G.Amati, CINECA)                           '
         print*,'  some fine tuning                                     '
+        print*,'  merging big loops                                    '
         print*,'               CFD School @ CINECA'
         print*,'                         2021'
         call sleep(1)

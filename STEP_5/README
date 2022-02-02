@@ -1,7 +1,9 @@
 
 
-* Modified version (STEP_5). Fine tuning
-  Merging loops, constant folding
+* Modified version (STEP_5). 
+  Fine tuning 
+	*  Merging big loops, constant folding
+        *  added fix for NVFORTRAN (compile with -DNVFORTRAN)
 
 Suggested exercises: 
 
