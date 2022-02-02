@@ -1,12 +1,16 @@
 
 
-* Modified version (STEP_0). No performance improveend done. Only "cleaning" the original code
+* Modified version (STEP_0). No performance improvement done. 
+  Only "cleaning" the original code
+  Main modifications:
    	* cleaning code                           
    	* different files for different subroutines
-        * removing unused arrays                 
-        * instrumenting for timing and Mlups    
+        * removing some unsed arrays                 
+        * instrumenting time loop for timing and Mlups    
         * created simple makefile         
-	* removed "debug" stabdard output
+	* removed "debug" standard output
+	* added hack for intel (rand is real*4) 
+          (but it doesn't work yet for nvfortran)
 
 To compile
 
@@ -22,13 +26,15 @@ make FOPT=-Ofast
 * adding a different flag  (e.g. -pg)
 make FIX=-pg
 
-To visualize
+To visualize/check the flow (density)
 
 use gnuplot and load movie_2d.bgk
 ...
 gnuplot> i=0
 gnuplot> l 'movie_2D.bgk'
 
+
+----------------------------------------------------------------------
 
 Suggested exercises: 
 
