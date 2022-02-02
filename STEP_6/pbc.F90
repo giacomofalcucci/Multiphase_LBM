@@ -6,6 +6,11 @@
         use storage
         implicit double precision(a-h,o-z)
 
+!$OMP PARALLEL DEFAULT(NONE)                            &
+!$OMP PRIVATE(i,j)                                      &
+!$OMP SHARED(nx,ny)                                     &
+!$OMP SHARED(f0,f1,f2,f3,f4,f5,f6,f7,f8)                
+!$OMP DO
         do j = 1, ny
             f0(0   ,j) = f0(nx,j)
             f0(nx+1,j) = f0( 1,j)
@@ -27,6 +32,7 @@
             f8(nx+1,j) = f8( 1,j)
         enddo
 
+!$OMP DO
         do i = 1, nx
             f0(i,0   ) = f0(i,ny)
             f0(i,ny+1) = f0(i, 1)
@@ -47,6 +53,7 @@
             f8(i,0   ) = f8(i,ny)
             f8(i,ny+1) = f8(i, 1)
         enddo
+!$OMP END PARALLEL
 
         f0(0   ,   0) = f0(nx  ,   0)
         f0(nx+1,   0) = f0(nx+1,  ny)

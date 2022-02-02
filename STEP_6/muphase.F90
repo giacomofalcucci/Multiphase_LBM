@@ -51,7 +51,7 @@
               call SYSTEM_CLOCK(icountL0, icount_rate, icount_max)
            endif
 !
-           if (mod(istep,20000).eq.0) then
+           if (mod(istep,200000).eq.0) then
               call savepop
            endif
 !

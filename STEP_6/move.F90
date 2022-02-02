@@ -24,12 +24,11 @@
               fp8(i,j) = f8(i-1,j+1)
            enddo
         enddo
-!$OMP END PARALLEL
-        
 
 ! border fix
 
         j = 0
+!$OMP DO
         do i = 0, nx+1 
            fp1(i,j)=f1(i,j)
            fp2(i,j)=f2(i,j)
@@ -42,6 +41,7 @@
         enddo
 !
         j = ny+1
+!$OMP DO
         do i = 0, nx+1 
            fp1(i,j)=f1(i,j)
            fp2(i,j)=f2(i,j)
@@ -54,6 +54,7 @@
         enddo
 !
         i = 0
+!$OMP DO
         do j = 0, ny+1
            fp1(i,j)=f1(i,j)
            fp2(i,j)=f2(i,j)
@@ -66,6 +67,7 @@
         enddo
 !
         i = nx+1
+!$OMP DO
         do j = 0, ny+1
            fp1(i,j)=f1(i,j)
            fp2(i,j)=f2(i,j)
@@ -76,6 +78,7 @@
            fp7(i,j)=f7(i,j)
            fp8(i,j)=f8(i,j)
         enddo
+!$OMP END PARALLEL
 !
 #ifdef DEBUG
         write(6,*) "Completed subroutine move"

@@ -1,11 +1,20 @@
 
 
-* Modified version (STEP_5). OpenMP version
+* Modified version (STEP_6). 
+	OpenMP version
+
+* Now, to make reasonable measuring total timesteps are 50'000, with final 1D and 2D diagnostic.
 
 Suggested exercises: 
 
 Exercise 1: 
-
 How is the scalign increasing the number of threads? 
 
+
+Exercise 2: 
+How is the scalign increasing the size of the problem?
+
+
+Exercise 3: 
+How is the scalign changing the compiler?
 
