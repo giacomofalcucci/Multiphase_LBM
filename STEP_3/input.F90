@@ -88,7 +88,6 @@
         print*,'  * hydrovar1 + hydrovar2 --> hydrovarPRE              '
         print*,'  * hydrovar1 + media     --> hydrovarPOST             '
         print*,'  * splitted force between hydrovarPRE and collis      '
-        print*,'  
         print*,'               CFD School @ CINECA'
         print*,'                         2021'
         call sleep(1)

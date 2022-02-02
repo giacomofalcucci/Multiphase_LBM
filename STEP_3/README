@@ -8,8 +8,6 @@ different subroutines
         * hydrovar1 + media     --> hydrovarPOST             
         * splitted force between hydrovarPRE and collis   
 
-* muphase.imp is modified. Only 1D and 2D diagnostics are performed at time 10'000. 
-
 Suggested exercises: 
 
 Exercise 1:
