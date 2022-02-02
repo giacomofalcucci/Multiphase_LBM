@@ -1,15 +1,18 @@
 
 
-* Modified version (STEP_1). Some performance improve done: all at single subroutine level, in details 
+* Modified version (STEP_1). 
+  Some performance improve done: all at single subroutine level, in details: 
         * merging loop                 
         * removing unecessary operations
         * unrolling loop                 
-        * modified subroutines:           
+        * modified these subroutines:           
              * force      
              * move        
              * collis       
              * hydrovar1    
              * hydrovar2     
+
+* Now diagnostic (1D and 2D) are done only once, at t=10'000
 
 Suggested exercises: 
 
