@@ -14,7 +14,7 @@
         integer::  nrhout
         logical iforce,iobst
 !/phys/ 
-        real(dp) u0,uf,fom  
+        real(dp) u0,v0,uf,fom  
         real(dp) f_guo
 !/constants/
         real(dp) cs2,cs22,cssq,rhoin,omega,fpois,den,visc

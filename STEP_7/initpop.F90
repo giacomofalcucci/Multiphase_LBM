@@ -11,15 +11,30 @@
         else
            do j = 1, ny
               do i = 1, nx
-                 f0(i,j) = rhod1(i,j)*w(0)
-                 f1(i,j) = rhod1(i,j)*w(1)
-                 f2(i,j) = rhod1(i,j)*w(2)
-                 f3(i,j) = rhod1(i,j)*w(3)
-                 f4(i,j) = rhod1(i,j)*w(4)
-                 f5(i,j) = rhod1(i,j)*w(5)
-                 f6(i,j) = rhod1(i,j)*w(6)
-                 f7(i,j) = rhod1(i,j)*w(7)
-                 f8(i,j) = rhod1(i,j)*w(8)
+!
+                 usq = u1(i,j) * u1(i,j)
+                 vsq = v1(i,j) * v1(i,j)
+                 sumsq = (usq + vsq) / cs22
+                 sumsq2 = sumsq * (1.0d0 - cs2) / cs2
+                 u22 = usq / cssq
+                 v22 = vsq / cssq
+                 ui = u1(i,j) / cs2
+                 vi = v1(i,j) / cs2
+                 uv = ui * vi
+                 rhoij = rhod1(i,j)
+!
+                 f0(i,j) = cte04*rhoij*(1.0d0 - sumsq)
+
+                 f1(i,j) = cte09*rhoij*(1.0d0 - sumsq + u22 + ui)
+                 f2(i,j) = cte09*rhoij*(1.0d0 - sumsq + v22 + vi)
+                 f3(i,j) = cte09*rhoij*(1.0d0 - sumsq + u22 - ui)
+                 f4(i,j) = cte09*rhoij*(1.0d0 - sumsq + v22 - vi)
+
+                 f5(i,j) = cte36*rhoij*(1.0d0 + sumsq2 +ui+vi+uv)
+                 f6(i,j) = cte36*rhoij*(1.0d0 + sumsq2 -ui+vi-uv)
+                 f7(i,j) = cte36*rhoij*(1.0d0 + sumsq2 -ui-vi+uv)
+                 f8(i,j) = cte36*rhoij*(1.0d0 + sumsq2 +ui-vi-uv)
+
               enddo
            enddo
         endif

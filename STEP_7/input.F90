@@ -113,7 +113,7 @@
         print*,'Coupling gnn :',gnn
         print*,'Coupling gnnn :',gnnn
         print*,'Applied force :',iforce
-        print*,'Initial velocity for this Poiseuille force :',u0
+        print*,'Initial velocity:',u0, v0
         if (iobst) then
             print*,' Linear Obstacle with length :',nobst
         endif
