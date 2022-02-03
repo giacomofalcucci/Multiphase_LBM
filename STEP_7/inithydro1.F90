@@ -22,10 +22,11 @@
         enddo
 
 ! Case 1 (single bubble)
+        radius2 = (ny*0.16)**2
         if (icond == 1) then 
            do j = 0,ny+1
               do i =0,nx+1
-                 if(((i-nx/2)**2+(j-ny/2)**2).lt.400) then
+                 if(((i-nx/2)**2+(j-ny/2)**2).lt.radius2) then
                     rhod1(i,j)=  &
                     2.410d0*(1.d0 + 0.01d0 * (rand(0) - 0.5d0) * 2.d0) 
                  else
