@@ -60,8 +60,16 @@ STEP_6: (50'000 timestep)
 1024^2 nvfortran  -O3 -mp, 32 threads -->  294''       177.9 Mlups
  
 STEP_7: 
+* With V100 (G100)
 512^2  nvfortran  -03 -acc, --> 70.7''       185 Mlups
 1024^2 nvfortran  -03 -acc, --> 91.9''       570 Mlups
 2048^2 nvfortran  -03 -acc, --> 178''       1175 Mlups
 4096^2 nvfortran  -03 -acc, --> 662''       1265 Mlups
-8192^2 nvfortran  -03 -acc, --> 662''       1890 Mlups
+8192^2 nvfortran  -03 -acc, --> XXX''       1890 Mlups (to check)
+
+
+* With A100 (G100)
+1024^2 nvfortran  -03 -acc, --> 95.8''       547 Mlups
+2048^2 nvfortran  -03 -acc, --> 152''       1348 Mlups
+4096^2 nvfortran  -03 -acc, --> 380''       2209 Mlups
+8192^2 nvfortran  -03 -acc, -->1397''       2402 Mlups

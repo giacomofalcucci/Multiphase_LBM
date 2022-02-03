@@ -6,7 +6,7 @@
 * to compile
 Only nvfortran suppor openacc so
 
-make FC=nvfortran FOPT="-acc -Minfo=acc -03 -ta=tesla:cc70,managed" FIX="-DNVFORTRAN"
+make FC=nvfortran FOPT="-acc -Minfo=acc -O3 -ta=tesla:cc70,managed" FIX="-DNVFORTRAN"
 
 For V100 --> cc70
 For A100 --> cc80
