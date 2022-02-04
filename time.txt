@@ -1,3 +1,4 @@
+Some timing, as reference
 
 ORIG: (via unix command time)
 256^2
@@ -56,8 +57,6 @@ STEP_6: (50'000 timestep)
 1024^2 nvfortran  -O3 -mp,  2 threads -->  1XX''	83.1 Mlups
 1024^2 nvfortran  -O3 -mp,  4 threads -->   XX''       155.1 Mlups
 1024^2 nvfortran  -O3 -mp,  8 threads -->   XX''       255.8 Mlups
-1024^2 nvfortran  -O3 -mp, 16 threads -->   XX''       301.7 Mlups
-1024^2 nvfortran  -O3 -mp, 32 threads -->  294''       177.9 Mlups
  
 STEP_7: 
 * With V100 (G100)
@@ -65,7 +64,6 @@ STEP_7:
 1024^2 nvfortran  -03 -acc, --> 91.9''       570 Mlups
 2048^2 nvfortran  -03 -acc, --> 178''       1175 Mlups
 4096^2 nvfortran  -03 -acc, --> 662''       1265 Mlups
-8192^2 nvfortran  -03 -acc, --> XXX''       1890 Mlups (to check)
 
 
 * With A100 (G100)
