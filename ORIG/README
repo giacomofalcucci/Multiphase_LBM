@@ -1,6 +1,6 @@
 
 
-* Original version, use only as a reference ad to understand how the code works.
+Original version, use only as a reference ad to understand how the code works in its original version (the development one).
 * the initial condition is for many bubble (Case 2). For a Single central bubble remove comments to Case 1 and comment line for Case 2.
 
 
@@ -14,9 +14,11 @@ gnuplot> i=0
 gnuplot> l 'movie_2D.bgk'
 ...
 
+(you can plot total velocity un-commenting some lines in movie_2D.bgk file)
+
 * To clean the directory (removing all output files)
 ./clean.sh
 
 The size of the problem is defined in muphase.par. The default value is 256^2
 The duration of the run is defined in muphase.par. The default value is 10000
-The diagnostic of the run is defined in muphase.par. The default value is 100 (1D) and 500 (2D).
+The diagnostics of the run are defined in muphase.par. The default value is 100 (1D) and 500 (2D).
