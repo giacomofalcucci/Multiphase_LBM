@@ -10,7 +10,7 @@ It is not the best performing code, neither it was intended to be.
 You can write (Giorgio Amati - g.amati@gmail.com, or Giacomo Falcucci - giacomo.falcucci@uniroma2.it) and we'll try to reply but no support is provided.
 Good Luck ;-) 
 
-* Directory structure  (each directory contains a README file with some details)
+* Directory structure  (each directory contains a README file with some details, and some png images to seed the flow)
 
 DOC: this directory contains the documentation
 ORIG: this directory contains the original code as it was. It must be used only as a reference
