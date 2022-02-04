@@ -1,23 +1,34 @@
 
-A 2D LBM-tho phase fortran-base code is presented here
+A 2D LBM-tho phase fortran-based code is presented here. 
+It is not a production code. It is not bug-free at all. It is intended to show a possible optimiziation procedure, 
+starting from cleaning a "test" code, perform serial optimization at different level (inside and between subroutines), 
+Shared memory parallelization using OpenMP and at the end porting it to GPU using OpenACC. 
+Only a fortran compilere is needed.
 
-This is the directory structure
+It is not the best performing code, neither it was intended to be. 
 
+You can write (Giorgio Amati - g.amati@gmail.com, or Giacomo Falcucci - giacomo.falcucci@uniroma2.it) and we'll try to reply but no support is provided.
+Good Luck ;-) 
+
+* Directory structure  (each directory contains a README file with some details)
 
 DOC: this directory contains the documentation
 ORIG: this directory contains the original code as it was. It must be used only as a reference
-STEP_0: Code cleaned. No optimization performed
+STEP_0: Code cleaned. No optimization performed (now empity)
 STEP_1: Single subroutine level optimization
 STEP_2: Code improvement (F90,allocatable vectors). No optimization performed
 STEP_3: Multi subroutine level optimization
-STEP_4: Changed data allocation 
+STEP_4: Changing data allocation 
 STEP_5: Fine tuning, merging (big) loops, fusing further subroutine
 STEP_6: OpenMP version
-STEP_7: OpenACC version
+STEP_7: OpenACC version + some fix (e.g. inithydro1.F90)
 
 
 
-All the time reported here refers to a Intel(R) Xeon(R) Platinum 8260 CPU @ 2.40GHz with the followinf compilers
+All the time reported here refers to a 
+
+CPU: Intel(R) Xeon(R) Platinum 8260 CPU @ 2.40GHz with the following compilers
+GPU: Nvidia V100 and Nvidia A100
 
 * gfortran: gcc version 8.4.1 20200928 (Red Hat 8.4.1-1) (GCC) 
 * ifort: fort version 2021.5.0
