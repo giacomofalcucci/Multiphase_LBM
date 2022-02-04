@@ -1,7 +1,7 @@
 
 
-* Modified version (STEP_1). 
-  Some performance improve done: all at single subroutine level, in details: 
+Modified version (STEP_1). 
+Performance improvement done. All at single subroutine level, in details: 
         * merging loop                 
         * removing unecessary operations
         * unrolling loop                 
