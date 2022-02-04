@@ -1,10 +1,10 @@
 
 
-* Modified version (STEP_0). No performance improvement done. 
-  Only "cleaning" the original code
-  Main modifications:
+Modified version (STEP_0). 
+No performance improvement done: Only "cleaning" the original code
+Main modifications:
    	* cleaning code                           
-   	* different files for different subroutines
+   	* splitting orignal file in different files for different subroutines
         * removing some unsed arrays                 
         * instrumenting time loop for timing and Mlups    
         * created simple makefile         
@@ -35,7 +35,6 @@ gnuplot> l 'movie_2D.bgk'
 
 
 ----------------------------------------------------------------------
-
 Suggested exercises: 
 
 Exercise 1: 
