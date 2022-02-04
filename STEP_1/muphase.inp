@@ -1,6 +1,6 @@
-10000                     nsteps
-500                       nsteps for output
-100                       nsteps for diagnostics
+10000                    nsteps
+10000                    nsteps for output
+10000                    nsteps for diagnostics
 1.00d0                   dt (=dx)    
 0.16666667d0             visc
 -5.00d0                  G
