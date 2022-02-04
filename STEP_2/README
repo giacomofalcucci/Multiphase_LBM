@@ -1,12 +1,12 @@
 
 
-* Modified version (STEP_2). 
-  Coding improvement.
+Modified version (STEP_2). 
+Coding improvement.
         * move to fortran 90                                 
-        * removed common  --> using module                   
+        * removed common  --> using nove modules                   
         * removed fourier subroutine                         
         * allocatable vector                                 
-        * modified input: size from input file, no need to recompile           
+        * modified input: box size from input file, no need to recompile everytime          
 
 Suggested exercises: 
 
